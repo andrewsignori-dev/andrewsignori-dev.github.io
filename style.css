@@ -57,6 +57,37 @@ section h2 {
     margin-bottom: 1rem;
 }
 
+/* CV Section */
+#cv {
+    padding: 3rem 2rem;
+    background-color: #181818;
+    color: #f1f1f1;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+#cv h2 {
+    color: #6aa8ff;
+    margin-bottom: 1rem;
+}
+
+#cv .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #6aa8ff;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+#cv .btn:hover {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+
 /* Projects Dark/Light Mode */
 #projects.dark-project { background: #181818; color: #f1f1f1; }
 #projects.light-project { background: #f9f9f9; color: #333; }
