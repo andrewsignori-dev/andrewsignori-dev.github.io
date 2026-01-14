@@ -3,88 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Signori | Portfolio</title>
+    <title>Andrea Signori | Data Scientist</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/profile.jpg" type="image/png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container nav-container">
-            <h1 class="logo">AS</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#vcard">vCard</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle"><i class="fa-solid fa-moon"></i></button></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Andrea Signori, PhD</h1>
-            <p>Data Scientist | Researcher | Tech Enthusiast</p>
-            <div class="social-icons">
-                <a href="https://github.com/johndoe" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/johndoe" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/johndoe" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </header>
+<!-- Navigation -->
+<nav>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- About Section -->
-    <style>
-    #about {
-        text-align: left; /* aligns all text inside #about to the left */
-    }
-    </style>
-    
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <img src="assets/profile.jpg" alt="Andrea Signori" class="profile-pic">
+    <h1>Andrea Signori</h1>
+    <p>Data Scientist & Analyst</p>
+</section>
 
-             <!-- Background & Education -->
-            <p>My name is Andrea Signori, and I am from Italy. I’m a Data Scientist and Analyst. </p>
-            <p>I completed my Bachelor's degree in Economics and Finance at the University of Brescia in Italy in 2019, and I obtained my Master's degree in Data Science within a Double Degree program with Trier University in 2022. </p>
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>My name is Andrea Signori, and I am from Italy. I’m a Data Scientist and Analyst.</p>
+    <p>I completed my Bachelor's degree in Economics and Finance at the University of Brescia in Italy in 2019, and I obtained my Master's degree in Data Science within a Double Degree program with Trier University in 2022.</p>
+    <p>I developed my master thesis through a joint research collaboration with Harvard University, studying time-dependent forecasting methodologies across econometrics and machine learning.</p>
+    <p>In 2025, I completed a PhD in Technology, Innovation, and Management, focusing on Data Science applications in the aviation industry.</p>
+    <p>Within my role, I aim to unveil the stories hidden in data—transforming raw numbers into insights that guide decisions, uncover trends, and bring clarity to complexity.</p>
+    <p>I enjoy crafting compelling data narratives, whether through interactive dashboards, visualizations, or analytical reports, turning data into knowledge that empowers action and sparks understanding.</p>
+</section>
 
-             <!-- Research experience -->
-            <p>I developed my master thesis with a join research collaboration with Harvard University, studying the time-dependent forecasting methodologies across econometrics and machine learning. </p>
-            <p>In 2025 I have completed a PhD in Technology, Innovation and Management with a thesis focuses on Data Science applied to the aviation industry. </p>
-            
-             <!-- Career focus & vision -->
-            <p>Within my role I aim to unveil the stories hidden in data—transforming raw numbers into insights that guide decisions, uncover trends, and bring clarity to complexity. </p>
-            <p>I enjoy crafting compelling data narratives, whether through interactive dashboards, visualizations, or analytical reports, turning data into knowledge that empowers action and sparks understanding.</p>
-    </section>
+<!-- Projects Section -->
+<section id="projects" class="dark-project">
+    <h2>Projects</h2>
 
-    <!-- vCard Section -->
-    <section id="vcard">
-        <div class="container">
-            <h2>Download My vCard</h2>
-            <p>Save my contact details directly to your device:</p>
-            <a href="assets/john-doe.vcf" class="btn" download><i class="fa-solid fa-download"></i> Download vCard</a>
-        </div>
-    </section>
+    <!-- Toggle Switch -->
+    <label class="switch">
+        <input type="checkbox" id="projectToggle">
+        <span class="slider round"></span>
+        Toggle Light Mode
+    </label>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
-        </div>
-    </section>
+    <div class="project-list">
+        <div class="project-item">Project 1</div>
+        <div class="project-item">Project 2</div>
+        <div class="project-item">Project 3</div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 John Doe. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
 
-    <script src="script.js"></script>
+<!-- Footer -->
+<footer>
+    <p>© 2026 Andrea Signori</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
